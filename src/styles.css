@@ -1,0 +1,73 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.info {
+  /* background-color: blue; */
+  color: #4b9ee6;
+}
+/* TicTacToeBoard.css */
+.board {
+  margin-left: auto; /* Push to the middle */
+  margin-right: auto; /* Push to the middle */
+}
+.board ul {
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+.board li {
+  list-style-type: none;
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+
+.board li.selected {
+  border-color: black; /* Change border color when selected */
+}
+
+/* Hide the default checkbox */
+.checkbox-container input[type="checkbox"] {
+  display: none;
+}
+
+/* Style the checkbox container */
+.checkbox-container {
+  position: relative;
+  display: inline-block;
+  width: 80px; /* Adjust width as needed */
+  height: 80px; /* Adjust height as needed */
+}
+
+/* Style the custom checkmark */
+.checkbox-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px; /* Adjust font size as needed */
+  border: 2px #527390 solid;
+}
+
+/* Style the checked state of the checkbox */
+.checkbox-container input[type="checkbox"]:checked + .checkmark {
+  color: #17354f; /* Change color as needed */
+}
+
+.resetContainer {
+  margin: 10px;
+}
+
+.resetContainer button {
+  background-color: #4b9ee6;
+  border: 0px;
+  color: white;
+  border-radius: 2px;
+}
